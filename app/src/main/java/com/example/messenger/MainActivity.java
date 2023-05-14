@@ -100,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
         mainUserRecyclerview = findViewById(R.id.mainUserRecyclerview);
         mainUserRecyclerview.setLayoutManager(new LinearLayoutManager(this));
         adapter = new UserAdapter(MainActivity.this,userArrayList);
