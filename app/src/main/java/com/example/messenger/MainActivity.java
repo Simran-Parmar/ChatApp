@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.android.play.integrity.internal.v;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -69,33 +70,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         imglogout = findViewById(R.id.logoutimg);
-        imglogout.setOnClickListener(new View.OnclickListener){
+        imglogout.setOnClickListener(new android.view.View.OnClickListener() {
             @Override
-
-                public void onClick(View v){
-                Dialog dialog =new Dialog(MainActivity.this.R.style.dialoge);
+            public void onClick(android.view.View view) {
+                Dialog dialog =new Dialog(MainActivity.this,R.style.dialog);
                 dialog.setContentView(R.layout.dialog_layout);
+
                 Button no,yes;
                 yes= dialog.findViewById(R.id.yet);
                 no= dialog.findViewById(R.id.yesbnt);
-                yes.setOnClickListener(new.OnclickListener(){
+                yes.setOnClickListener(new android.view.View.OnClickListener() {
                     @Override
-                    (View v){
+                    public void onClick(android.view.View view) {
                         FirebaseAuth.getInstance().signOut();
                         Intent intent= new Intent(MainActivity.this,login.class);
                         startActivity(intent);
                     }
                 });
-                no.setOnClickListener(new.OnClickListener(){
-                @Override
-                    (View v){
+                no.setOnClickListener(new android.view.View.OnClickListener() {
+                    @Override
+                    public void onClick(android.view.View view) {
                         dialog.dismiss();
                     }
                 });
-
-               dialog.show();
+                dialog.show();
             }
         });
+
+
+
+
+
         mainUserRecyclerview = findViewById(R.id.mainUserRecyclerview);
         mainUserRecyclerview.setLayoutManager(new LinearLayoutManager(this));
         adapter = new UserAdapter(MainActivity.this,userArrayList);
