@@ -3,7 +3,11 @@
     <style name="Base.Theme.MESSENGER" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+    </style name="dialog">
+        <item name="andriod:windowBackground">@drawable/empty_bsckround</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowMinWidthMajor">80%</item>
+    <item name="windowActionBar">false</item>
 
     <style name="Theme.MESSENGER" parent="Base.Theme.MESSENGER" />
 </resources>
