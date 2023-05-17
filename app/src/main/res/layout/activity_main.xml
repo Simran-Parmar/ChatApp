@@ -47,6 +47,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainUserRecyclerview"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_400sdp"
         android:layout_below="@id/toolbar"
@@ -60,9 +61,8 @@
         android:layout_marginTop="167dp"
         android:layout_marginEnd="19dp"
         android:layout_marginRight="19dp"
-        android:layout_marginBottom="104dp"
 
-        />
+        android:layout_marginBottom="104dp" />
     <ImageView
         android:layout_width="47dp"
         android:layout_height="38dp"
