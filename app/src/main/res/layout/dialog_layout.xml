@@ -15,7 +15,7 @@
         android:layout_height="@dimen/_45sdp"
         android:src="@drawable/logout"
         android:layout_gravity="center"
-        android:layout_margin="13dp"/>
+        android:layout_margin="12dp"/>
 
     <TextView
         android:layout_width="match_parent"
