@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView0"
-        android:layout_width="151dp"
-        android:layout_height="108dp"
+        android:layout_width="152dp"
+        android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,8 +36,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="215dp"
-        android:layout_height="21dp"
+        android:layout_width="216dp"
+        android:layout_height="22dp"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center"
         android:text="Sign In to continue"
@@ -52,8 +52,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="95dp"
-        android:layout_height="43dp"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center_vertical"
         android:text="EMAIL"
